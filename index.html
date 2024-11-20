@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website of [Your Name] - [Brief Profession Description]">
+    <title>[Your Name] - Home</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file (if you have one) -->
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: "Merriweather";
+        }
+        
+        p {
+            font-size: 1.8em;
+        }
+        
+        h2 {
+            font-size: 2.2em;
+        }
+        
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+         
+            
+        }
+        
+
+       
+        /* Navbar Styling */
+        nav {
+            background-color: #FFABAB;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 14px 20px;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+        nav ul li a:hover {
+            background-color: #3498db;
+            border-radius: 5px;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #BA2B2B;
+            color: white;
+            padding: 80px 20px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-style: italic;
+        }
+        
+      
+
+        /* Main Content */
+        .main-content {
+            display: grid;
+            grid-template-columns: 20% 40%  40% 10%;
+            grid-template-rows: auto;
+            grid-template-areas: 
+                "space1     bio    headshot    spcae 2";
+            padding: 30px 15px;
+             border: solid 5px #FFABAB;
+           
+        }
+        
+        .space1 {
+            grid-area:space1;
+        }
+        
+        .space2 {
+            grid-area:space2;
+        }
+       /* Bio and Image Layout */
+        .bio-container {
+            gap: 40px; /* Space between image and text */
+            max-width: 1000px;
+            margin-top: 30px;
+            text-align: left;
+        }
+        
+        .bio {
+            grid-area:bio;
+            padding-left: 30px;
+            padding-right: 30px;
+            text-align: left;
+            margin-right: 20px;
+          
+            
+        }
+        .headshot {
+            grid-area:headshot;
+          
+      
+        }
+        
+        .headshot img {
+             width: 400px; /* Increased image size */
+            height: 400px; /* Increased image size */
+            border-radius: 50%;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            object-fit: cover; /* Ensures the image is not distorted */
+            
+        }
+        
+   
+        .bio-text {
+            max-width: 600px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        .bio-text h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .bio-text p {
+            margin-bottom: 20px;
+        }
+   
+        /* Footer Styling */
+        footer {
+            background-color: #BA2B2B;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Responsive design*/
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 10px;
+                text-align: right;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#resume">Resume/CV</a></li>
+            <li><a href="#travel">Travel</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Adalynn Cherry</h1>
+        <p>Student Athlete Majoring in Economics and Spanish at Washington &amp; Jefferson College</p>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="space1"></div>
+            <div class="bio" id="bio">
+            <h2>About Me:</h2>
+            <p>
+                Hi! I am an Economics and Spanish student at Washington &amp; Jefferson College who is passionate and driven. I am a senior captain of the women's basketball team and very involved in the W&amp;J community. My future aspirations involve attending graduate school to pursue higher education in Economics while consntatly improving my community presence--with the intention of expnading this abroad to immerse myself into other cultures and the international business world. 
+            </p>
+            </div>
+          <div class ="headshot">
+            <img src="images/headshot.JPG" alt="Headshot">
+                </div>
+        <div class="space2"></div>
+        </div>
+     
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Adalynn Cherry | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
