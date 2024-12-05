@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website of Adalynn Cherry - Home">
+    <title>Adalynn Cherry - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: "Merriweather", serif; 
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            margin: 0; /* Remove any default body margin */
+        }
+
+        /* Navbar Styling */
+        nav {
+            background-color: #FFABAB;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 14px 20px;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #E4ECEC;
+            border-radius: 5px;
+            color: black;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #BA2B2B;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-style: italic;
+            font-size: 2em;
+            margin-top: 10px;
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 70% 30%;
+            gap: 50px;
+             grid-template-rows: auto;
+            grid-template-areas: 
+                "bio headshot";
+           
+        }
+        
+        .headshot {
+            grid-area:headshot;
+            margin-right: 200px;
+            padding: 25px;
+        }
+        
+        .bio {
+            grid-template:bio;
+            margin-left: 200px;
+            width: 80%;
+             padding: 20px;
+            padding-left: 40px;
+            padding-right: 40px;
+            background-color: #E4ECEC;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 25px;
+         border: solid 5px #FFABAB;
+            text-align: left;
+            margin-top: 30px;
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+        
+        .headshot img {
+            height: 500px;  /* Reduced size of headshot */
+            border-radius: 50%;
+            margin: auto;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            
+        }
+
+        .social-media ul {
+            list-style: none;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .social-media ul li {
+                 margin: 0 20px;
+                padding-top:10px;
+        }
+        
+        .socialtitle h2 {
+            text-align:center;
+        }
+        
+        .linked, .email {
+            background-color:#FFABAB;
+            border-radius:25px;
+            color:black;
+        }
+        
+           /* Footer Styling */
+        footer {
+            margin-top: 40px;
+            background-color: #BA2B2B;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        
+        @media (max-width: 1760px) {
+            .main-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                grid-template-areas: 
+                "bio"
+                "headshot";
+            }
+            
+            
+            .bio h2 {
+                text-align: center;
+            }
+             .main-content {
+                margin: 15px;
+                grid-template-columns: 1fr;
+                gap: 30px;
+                grid-template-areas: 
+                "bio"
+                "headshot";
+            }
+            .headshot {
+                margin: 0 auto;
+                padding: 0;
+            }
+            
+            .headshot img {
+                height: 400px;
+                margin-bottom: 20px;
+            }
+            
+            .bio {
+                width: 100%;
+                padding: 20px;
+                margin: auto;
+               box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 25px;
+            border: solid 5px #FFABAB;
+                font-size: 1.2em;
+               
+            }
+            
+            .bio h2 {
+                text-align: center;
+            
+            }
+            
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: right;
+               
+            }
+            nav ul li {
+        margin: 2px 0; /* Reduce space between list items */
+    }
+
+    nav ul li a {
+        padding: 0px 0px; 
+    }
+            
+            header h1 {
+                font-size:3.2em;
+            }
+          
+            header p {
+                font-size:1.3em;
+            }
+   
+        }
+
+  
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/education.html">Education</a></li>
+             <li><a href="pages/athletics.html">Athletics</a></li>
+            <li><a href="pages/resume.html">Resume</a></li>
+            <li><a href="pages/travel.html">Travel</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Adalynn Cherry</h1>
+        <p>Student Athlete Majoring in Economics and Spanish at Washington &amp; Jefferson College</p>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="main-content">
+            <div class="bio" id="bio">
+                <h2>About Me:</h2>
+                <p>
+                    I am an Economics and Spanish student at Washington &amp; Jefferson College who is passionate and driven. I am a senior captain of the women's basketball team and very involved in the W&amp;J community. My future aspirations involve attending graduate school to pursue higher education in Economics while constantly improving my community presence—with the intention of expanding this abroad to immerse myself into other cultures and the international business world.
+                </p>
+            </div>
+                <!-- Headshot moved here at the bottom of the bio section for mobile only -->
+                <div class="headshot">
+                    <img src="images/headshot.JPG" alt="Headshot">
+                </div>
+            </div>
+         </div>
+        <div class="socialtitle">
+           <h2>Contact Information:</h2>
+        </div>
+              <div class="social-media">
+            <ul>
+                <div class="linked"><li><a href="https://www.linkedin.com/in/adalynn-cherry-b36730260/">LinkedIn</a></li></div>
+                <div class="email"><li><a href="mailto:adalynn.cherry03@gmail.com">Send me an email!</a></li></div>
+                  </ul>
+        </div>
+       
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Adalynn Cherry | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
