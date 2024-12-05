@@ -1,0 +1,156 @@
+
+        * {
+            box-sizing: border-box;
+            font-family: "Merriweather", serif; 
+            margin: 0;
+            padding: 0;
+        }
+
+  /* Footer Styling */
+        footer {
+            margin-top: 40px;
+            background-color: #BA2B2B;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            margin: 0; /* Remove any default body margin */
+        }
+
+        /* Navbar Styling */
+        nav {
+            background-color: #FFABAB;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 14px 20px;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #E4ECEC;
+            border-radius: 5px;
+            color: black;
+            padding:10px;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #BA2B2B;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-style: italic;
+            font-size: 2em;
+            margin-top: 10px;
+        }
+
+ header a:hover {
+             background-color: #E4ECEC;
+            border-radius: 5px;
+            color: black;
+            padding: 10px;
+        }
+        
+        header a {
+            color: white;   
+        }
+
+.major {
+          margin: 8em 4em 4em 4em;
+    display:grid;
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+         grid-template-columns: 50% 50%;
+        grid-template-rows: 10% 90%;
+            grid-template-areas: 
+            "header header" 
+            "requirements spring"
+            ;
+    
+}
+
+.major .header {text-align: center;
+}
+
+ .spring p {
+    font-size: 16px;
+}
+
+ .requirements p {
+    font-size: 16px;
+}
+
+
+              @media (min-width: 768px) {
+             
+          
+        }
+
+        /* Media Queries for Responsiveness */
+           @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: right;
+               
+            }
+            nav ul li {
+        margin: 2px 0; /* Reduce space between list items */
+    }
+
+    nav ul li a {
+        padding: 0px 0px; 
+    }
+            
+   
+        }
+
+            header h1 {
+                font-size:3.2em;
+            }
+          
+            header p {
+                font-size:1.3em;
+            }
+
+            
+        }
+
+  
