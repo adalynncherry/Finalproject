@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website of Adalynn Cherry - Home">
+    <title>Adalynn Cherry - Home</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        
+.major {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 30px;
+    display:grid;
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+         grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+            grid-template-areas: 
+            "header header" 
+            "economics spanish"
+            "purpose    purpose"
+            ;
+        }
+        .major h1 {text-align: center;
+            font-size: 50px;
+            padding-top: 0px;
+            padding-bottom: 10px;}
+        
+        h2 {
+            text-align: center;
+        }
+        
+        .major p{
+            font-size: 1.6em;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        
+        .major li {
+            font-size: 1.6em;
+        }
+        
+        .major ul {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        
+        .major h2 {
+            font-size: 2em;
+        }
+        
+        .major h3 {
+            font-size: 1.8em;
+        }
+        
+        .major p, ul, h2, h3 {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+
+.economics {grid-area:economics;
+              border: solid 5px #FFABAB;
+    background-color: #E4ECEC;
+     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 25px;
+                padding: 20px 20px 20px 20px;
+}
+.spanish {grid-area:spanish;
+     border: solid 5px #FFABAB;
+    background-color: #E4ECEC;
+     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 25px;
+      padding: 20px 20px 20px 20px;
+    }
+     
+        .purpose {
+            grid-area:purpose;
+     border: solid 5px #FFABAB;
+    background-color: #E4ECEC;
+             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 25px;
+      padding: 20px 20px 20px 20px;
+    }
+        
+
+.spanish, .economics, .purpose p {18px;}
+        
+        @media (max-width: 1200px) {
+            .major {
+                width:100%;
+                margin:0px;
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "header"
+                    "economics"
+                    "spanish"
+                    "purpose";
+            }
+            
+            .spanish, .economics, .purpose {
+                width:100%;
+                padding:20px;
+                margin:auto;
+                font-size:1em;
+                border-radius:25px;
+            }
+            
+            header h1 {
+                font-size:3.4em;
+            }
+          
+            header p {
+                font-size:1.2em;
+            }
+        }
+        
+        @media (max-width: 400px) {
+            
+            .container {
+                margin:0px;
+            }
+            .spanish, .economics, .purpose p {
+                font-size:.5em;
+            }
+            
+             .spanish, .economics, .purpose h2 {
+                font-size:.8em;
+            }
+            
+       .center   {
+             
+                text-align:center;
+            }
+            .spanish, .economics, .purpose {
+                width:100%;
+                border-radius:0px;
+                margin:0px;
+                
+            } 
+        }
+
+}
+ 
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="../index3.html">Home</a></li>
+            <li><a href="education.html">Education</a></li>
+             <li><a href="athletics.html">Athletics</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="travel.html">Travel</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Education</h1>
+        <p>My undergraduate degree is very diverse and sparks the question of "What are you going to do with that?"</p>
+        <p>Below I list the benefits of a dual degree in Economics and Spanish with a minor in Business Administration:</p>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="main-content">
+            <div class="major">
+             <div class="economics">
+                <h2>Economics and Business Administration</h2>
+                 <p>Through my Economics and Business Studies, I have learned several hard and soft skills that I feel have prepared me for future success.</p>
+                 
+                 <p>My four years thus far have provided me with a diverse skill set that has shaped me into a confident and impactful member of our campus community and the communities I have entered since being at Washington &amp; Jefferson College.</p>
+                 
+                 <h3>Technical Skills</h3>
+                 <ul>
+                    <li>Quantitative and Qualitative Research Collection</li>
+                     <li>Statistical Analysis using Ordinary Least Squares Methods</li>
+                     <li>Data management and maintenance using Microsoft Excel </li>
+                 </ul>
+                 <h3>Soft Skills:</h3>
+                 <ul>
+                    <li>Communicate with real businesses in the Washington Community about their business structure and operations</li>
+                    <li>Lead class discussions on historical Economic theory</li>
+                     <li>Present high-level research, literature review, and data and methodology techniques to peers and professors </li>
+                 </ul>
+                 
+             <h2>How have Economics and Business programs complemented each other for me?</h2>
+                 <p>I have found value in the mixture of both the back-end and front-end of businesses and the economy. In my economics courses, I have developed a strong analytical and mathematical-minded skill set for problem-resolution scenarios. In my business courses, I have learned intuitive thinking that has made me more creative, innovative, and versatile when I am confronted with new challenges.</p>
+            </div>
+            <div class="spanish">
+                <h2>Spanish</h2>
+                </div>
+            <div class="purpose">
+                <h2>Purpose/Goals:</h2>
+                <p>For a long time, I was also asking myself the question: "What am I going to do with this degree?" However, I trusted myself, my professors, and my mentors along the way as I developed my vision for my future.</p>
+                
+                <p>My goal is to pursue higher education and complete a Master's program in Economic Development at the University of Carlos III in Madrid, Spain. My studies and real-world experiencs showed me that I want to immerse myself cultrually into a business environment where I am also given the opportunity to be an impactful community member.
+                </p>
+                <p>The completion of this program will open up the following opportunities for me:</p>
+                <ul>
+                    <li>Connections with Global Non-Profit and NGO organizations</li>
+                    <li>Opportunity to extend my studies at the University of Lunde in Sweden</li>
+                    <li>Contribute to economic development initiatives such as public transportation and education projects</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+       
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Adalynn Cherry | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

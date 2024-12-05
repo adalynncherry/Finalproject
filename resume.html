@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website of Adalynn Cherry - Home">
+    <title>Adalynn Cherry - Home</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        header a:hover {
+             background-color: #E4ECEC;
+            border-radius: 5px;
+            color: black;
+        }
+        
+        header a {
+            color: white;   
+        }
+        
+        header {
+            margin-bottom: 10px;
+        }
+        
+        .container {
+            display:grid;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "internships"
+            "research"
+            "courses";
+        }
+        
+        .internships, .research, .courses {
+             background-color: #E4ECEC;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 25px;
+            border: solid 5px #FFABAB;
+            padding: 20px;
+            margin: 10px;
+        }
+        
+        .internships {
+            grid-area:internships;
+        }
+        
+        .research {
+            grid-area:research;
+        }
+        
+        .courses {
+            grid-area:courses;
+        }
+        
+        ul li {
+            margin-left: 20px;
+            padding-top: 8px;
+            
+        }
+    </style>
+    </head>
+<body>
+      <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="../index3.html">Home</a></li>
+            <li><a href="education.html">Education</a></li>
+             <li><a href="athletics.html">Athletics</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="travel.html">Travel</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Experience Highlights</h1>
+        <p><a href="../documents/resume.pdf">FULL RESUME</a></p>
+    </header>
+    <div class="container">
+        <div class = "internships">
+            <h2>Internships:</h2>
+            <h3><strong>Sisterson &amp; Co. Assurance, Tax &amp; Advisory Firm</strong>, Pittsburgh, PA | Summer 2024 | Consulting Internship</h3>
+            <ul>
+            <li>Communicated in Spanish with accountants and finance faculty to complete invoice verification testing of
+            international financial divisions</li>
+            <li>Utilized excel pivot tables and other data analysis tools to organize and transfer financial information and
+            statements for the borrowing bases of various companies</li>
+            <li>Traveled to Miami for a week-long field examination where I was responsible for communicating with
+warehouse staff and completing the inventory test count. </li>
+            </ul>
+           <h3><strong>United Way of Washington County</strong>, Washington, PA | Fall 2023 | Marketing &amp; Communications Internship</h3>
+            <ul>
+                <li>Organized the collection of school-supply drives and care packages for local school districts</li>
+                <li>Input and organized payroll donations for the 2023-2024 Community Impact Fund into the United Way’s
+                software</li>
+                <li>Created social media posts, flyers, and slideshow presentations in Canva for fundraising advertisements, board
+                meeting proposals</li>
+                <li>Attended monthly meetings with other non-profits focused on the health and well-being of Washington County,
+contributing to networking with others and advertising upcoming United Way events</li>
+            </ul>
+        </div>
+        <div class="research">
+            <h2>Research Highlights:</h2>
+        </div>
+        <div class="courses">
+            <h2>Relevant Courses:</h2>
+        </div>
+        </div>
+      <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Adalynn Cherry | All Rights Reserved</p>
+    </footer>
+    </body>
+</html>

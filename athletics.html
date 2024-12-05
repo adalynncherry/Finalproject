@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website of Adalynn Cherry - Home">
+    <title>Adalynn Cherry - Home</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        
+         * {
+            box-sizing: border-box;
+            font-family: "Merriweather", serif; 
+            margin: 0;
+            padding: 0;
+        }
+        
+        
+        img {
+            border-radius:25px;
+        }
+        .container {
+            margin:20px;
+            margin-left:40px;
+            margin-right:40px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: auto;
+            grid-row-gap: 15px;
+            grid-column-gap: 15px;
+            grid-template-areas: 
+            "career cimg"
+            "images community";
+        }
+        
+        .career, .community {
+            padding: 20px;
+        }
+        
+            
+            
+            
+        .career {
+            grid-area:career;
+               background-color: #E4ECEC;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 25px;
+            border: solid 5px #FFABAB;
+            text-align: left;
+        }
+        
+        .img1 {
+            grid-area:cimg;
+                display: flex;
+            flex-direction:row;
+        
+        }
+        
+        .img1 {
+            margin:0;
+        }
+        
+        .one {
+            margin:auto;
+        }
+        
+        .no {
+            display:none;
+        }
+        
+
+        .img3 {
+            grid-area:images;
+        }
+        
+        .community {
+            grid-area:community;
+               background-color: #E4ECEC;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 25px;
+         border: solid 5px #FFABAB;
+            text-align: left;
+        }
+        
+         /* Responsive Design */
+        
+        @media (max-width: 1180px) {
+            .no {
+                display:none;
+            }
+        }
+    
+    
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "career"
+                    "cimg"
+                    "community";
+            }
+
+            .career, .community {
+
+                border: solid 5px #FFABAB;
+                border-radius: 25px;
+                font-size: 1.2em;
+            }
+            
+            
+           
+            
+            
+            .team img {
+                width:auto;
+                
+            }
+            
+            .one {
+                margin:auto;
+            }
+            
+            .no {display:none;}
+
+            
+            h2 {
+            
+                text-align: center;
+            }
+
+            
+        }
+
+    
+    </style>
+    </head>
+    <body>
+        <nav>
+        <ul>
+            <li><a href="../index3.html">Home</a></li>
+            <li><a href="education.html">Education</a></li>
+             <li><a href="athletics.html">Athletics</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="travel.html">Travel</a></li>
+        </ul>
+    </nav>
+    
+        <header>
+            <h1>LIFE AS A<br>STUDENT ATHLETE</h1>
+            <p><a href="https://gopresidents.com/sports/womens-basketball/roster/adalynn-cherry/7423">Adalynn Cherry | #10 | W&amp;J Women's Basketball | 2025</a></p>
+        </header>
+        <div class="container">
+        <div class="career">
+            <h2>Career Overview:</h2>
+           <h2>What I Learned:</h2>
+        </div>
+        <div class="img1">
+            <div class="one">
+            <img src="../images/juggle.jpg">
+            <img class ="no" src="../images/headshot2.jpg">
+                </div>
+            <div class="two">
+                </div>
+            </div>
+        <div class="img3">
+        </div>
+        <div class="community">
+            <h2>Bigger than Basketball:</h2>
+            <h3>Coaching Experience</h3>
+            <h3>Community Impact</h3>
+            </div>
+        <div class="team">
+            </div>
+            </div>
+
+       
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Adalynn Cherry | All Rights Reserved</p>
+    </footer>
+
+    </body>
+</html>

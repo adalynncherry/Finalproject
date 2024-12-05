@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website of Adalynn Cherry - Home">
+    <title>Adalynn Cherry - Home</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+     
+ .container {
+    padding: 20px;
+}
+        
+        .slideshow {
+            display:none;
+        }
+
+/* Gallery Styling */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin: auto;
+    max-width: 900px;
+    width: 100%;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensures the image covers the area without distortion */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/*.gallery img:hover {
+    transform: scale(1.1);
+}*/
+
+/* Wishlist Section */
+.wishlist {
+    margin: auto;
+    margin-top: 25px;
+    border: solid 5px #FFABAB;
+    background-color: #E4ECEC;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    max-width: 900px;
+    width: 100%;
+    padding: 20px;
+}
+
+.wishlist h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #333;
+    font-family: "impact", "fantasy";
+}
+
+.wishlist ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: #333;
+    text-align: center;
+    font-size: 24px;
+    
+}
+
+.wishlist ul li {
+    margin: 10px 0;
+}
+
+/* Mobile Slideshow Styles */
+@media (max-width: 768px) {
+    /* Hide the gallery grid on mobile */
+    .gallery {
+        display: none;
+    }
+    
+    .container {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "slideshow"
+            "wishlist";
+    }
+    
+    .wishlist {
+        grid-area:wishlist;
+        margin-top: 4em;
+    }
+    
+
+    /* Slideshow styling for mobile */
+    .slideshow {
+        grid-area:slideshow;
+        display: block;
+        width: 100%;
+        position: relative;
+        margin-bottom: 4em;
+        max-width: 100%;
+        height: 300px; /* Set a fixed height for the slideshow */
+    }
+
+    /* Hide images initially */
+    .slideshow img {
+        border-radius: 25px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);  /* Center the images */
+        width: 300px;
+        height: 400px;
+        object-fit: cover;  /* Ensures the images cover the area without distortion */
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+
+    /* Show images with animation */
+    .slideshow img.active {
+        opacity: 1;
+    }
+
+    /* Keyframes for the slideshow transitions */
+    @keyframes slideshow {
+        0% { opacity: 0; }
+        10% { opacity: 1; }
+        33% { opacity: 1; }
+        43% { opacity: 0; }
+        100% { opacity: 0; }
+    }
+
+    /* Set the duration and timing of the animation; help from AI for this feature */
+    .slideshow img:nth-child(1) { animation: slideshow 15s infinite 0s; }
+    .slideshow img:nth-child(2) { animation: slideshow 15s infinite 5s; }
+    .slideshow img:nth-child(3) { animation: slideshow 15s infinite 10s; }
+    .slideshow img:nth-child(4) { animation: slideshow 15s infinite 15s; }
+    .slideshow img:nth-child(5) { animation: slideshow 15s infinite 20s; }
+    .slideshow img:nth-child(6) { animation: slideshow 15s infinite 25s; }
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="../index3.html">Home</a></li>
+            <li><a href="education.html">Education</a></li>
+             <li><a href="athletics.html">Athletics</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="travel.html">Travel</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Travel with Me!</h1>
+        <p>Aside from my academic and athletic endeavors, I love to travel. Here is a look into my digital travel diaries:</p>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+   
+             <div class="gallery">
+        <img src="../images/banf1%202.jpg" alt="Lake Louise: Banff, Canada" title="Lake Louise: Banff, Canada">
+        <img src="../images/italycolors%202.jpg" alt="Vernazza, Italy" title="Vernazza, Italy">
+        <img src="../images/banf2%202.jpg" alt="Moraine Lake: Banff, Canada" title="Moraine Lake: Banff, Canada">
+        <img src="../images/bologna%202.jpg" alt="Bologna, Italy" title="Bologna, Italy">
+        <img src="../images/banff3%202.jpg" alt="The Town of Canmore: Alberta, Canada" title="The Town of Canmore: Alberta, Canada">
+        <img src="../images/garda%202.jpg" alt="Lake Garda, Italy" title="Lake Garda, Italy">
+    </div>
+        <div class="slideshow">
+            <img src="../images/banf1%202.jpg" alt="Lake Louise: Banff, Canada">
+            <img src="../images/italycolors%202.jpg" alt="Vernazza, Italy">
+            <img src="../images/banf2%202.jpg" alt="Moraine Lake: Banff, Canada">
+            <img src="../images/bologna%202.jpg" alt="Bologna, Italy">
+            <img src="../images/banff3%202.jpg" alt="The Town of Canmore: Alberta, Canada">
+            <img src="../images/garda%202.jpg" alt="Lake Garda, Italy">
+        </div>
+        <div class="wishlist">
+            <h2>Travel Wishlist:</h2>
+            <ul>
+                <li>Spain</li>
+                <li>Greece</li>
+                <li>Ireland</li>
+                <li>Amsterdam</li>
+            </ul>
+        </div>
+
+        </div>
+ 
+       
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Adalynn Cherry | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
