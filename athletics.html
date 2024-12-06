@@ -20,9 +20,8 @@
             border-radius:25px;
         }
         .container {
-            margin:20px;
-            margin-left:40px;
-            margin-right:40px;
+            width:80%;
+            margin:auto;
             display: grid;
             grid-template-columns: 50% 50%;
             grid-template-rows: auto;
@@ -30,7 +29,7 @@
             grid-column-gap: 15px;
             grid-template-areas: 
             "career cimg"
-            "images community";
+            "team community";
         }
         
         .career, .community {
@@ -68,10 +67,16 @@
             display:none;
         }
         
-
-        .img3 {
-            grid-area:images;
+        .team {
+            grid-area:team;
         }
+        
+        .team img {
+            margin:auto;
+            display:flex;
+        }
+
+        
         
         .community {
             grid-area:community;
@@ -85,6 +90,17 @@
          /* Responsive Design */
         
         @media (max-width: 1180px) {
+            
+            .container {
+                width:100%;
+                grid-template-columns:1fr;
+                grid-template-areas:
+                    "career"
+                    "cimg"
+                    "community"
+                    "team";
+            }
+            
             .no {
                 display:none;
             }
@@ -97,11 +113,12 @@
                 grid-template-areas:
                     "career"
                     "cimg"
-                    "community";
+                    "community"
+                    "team";
             }
 
             .career, .community {
-
+                margin: auto;
                 border: solid 5px #FFABAB;
                 border-radius: 25px;
                 font-size: 1.2em;
@@ -159,22 +176,16 @@
             <img src="../images/juggle.jpg">
             <img class ="no" src="../images/headshot2.jpg">
                 </div>
-            <div class="two">
-                </div>
             </div>
-        <div class="img3">
-        </div>
         <div class="community">
             <h2>Bigger than Basketball:</h2>
             <h3>Coaching Experience</h3>
             <h3>Community Impact</h3>
             </div>
         <div class="team">
+               <img src="../images/team2.jpg">
             </div>
             </div>
-
-       
-
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Adalynn Cherry | All Rights Reserved</p>
